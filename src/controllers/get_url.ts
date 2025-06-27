@@ -15,7 +15,7 @@ const getShortenedUrl = async (req, res) => {
         }
     })
 
-    console.log("doc is ", doc)
+    console.log("redirect url is", doc.redirectURL)
     return res.redirect(doc.redirectURL)
 }
 
