@@ -18,8 +18,9 @@ const generateShortUrl = async (req, res) => {
         visits: []
     })
 
-    console.log("url doc is ", urlDoc)
-    return res.json({"Message": "Successfully created short ID", "Short ID": urlDoc.urlShortId })
+    const urls = await urlModel.find();
+
+    return   res.render("home", { id: shortId, urls });
 
 }catch (error) {
         console.error('Error in generateShortUrl:', error);
