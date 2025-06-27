@@ -1,0 +1,39 @@
+{
+  "name": "shorty",
+  "version": "1.0.0",
+  "description": "A URL shortener built in Nodejs",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rule0x00/Shorty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rule0x00/Shorty/issues"
+  },
+  "homepage": "https://github.com/rule0x00/Shorty#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.16.1",
+    "nanoid": "^5.1.5",
+    "nodemon": "^3.1.10",
+    "shortid": "^2.2.17",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.4",
+    "typescript": "^5.8.3"
+  }
+}
